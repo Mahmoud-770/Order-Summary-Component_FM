@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+
+body{
+    background: hsl(225, 100%, 94%);
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* * * * * BACKGROUND PATTERNS * * * * */
+.img{
+    position: absolute;
+    top: -20%;
+    z-index: -1;
+}
+
+
+
+/* * * * * MAIN CARD * * * * */
+.card{
+    height: 550px;
+    width: 400px;
+    background: #fff;
+    box-shadow: 0px 10px 20px -10px hsl(224, 23%, 55%);
+    border-radius: 20px;
+    position: relative;
+}
+
+/* * * * * Media Query For Mobile-Screen * * * * */
+@media (max-width: 700px){
+    .card{transform: scale(.9);}
+}
+
+
+
+/* * * * * MAIN COUNTAINER * * * * */
+.count{
+    width: 100%;
+    height: 65%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+/* * * * * COVER BACKGROUND * * * * */
+.card .cover{
+    width: 100%;
+    height: 35%;
+    background-size: cover;
+    background-image: url(images/illustration-hero.svg);
+}
+
+
+
+/* * * * * MAIN TEXT * * * * */
+.count h1{
+    font-size: 22px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.count p{
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background: hsl(225, 100%, 98%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan .txt p:first-child{
+    color: hsl(223, 47%, 23%);;
+    font-weight: 700;
+}
+
+a{color: hsl(245, 75%, 52%);}
+/* * * * * HOVER * * * * */
+a:hover{text-decoration: none;}
+
+
+
+/* * * * * FIRST-BUTTON * * * * */
+button{
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 10px;
+    background: hsl(245, 75%, 52%);
+}
+button:hover{/* * * * * HOVER * * * * */
+    cursor: pointer;
+    background: hsl(244, 72%, 69%);
+    transition: .5s ease-in-out;
+}
+
+/* * * * * SECOND-BUTTON * * * * */
+.btn{
+    font-size: 14px;
+    font-weight: 700;
+}
+.btn:hover{/* * * * * HOVER * * * * */
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
